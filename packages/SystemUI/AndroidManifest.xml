@@ -242,7 +242,7 @@
 
         <!-- started from PhoneWindowManager
              TODO: Should have an android:permission attribute -->
-        <service android:name=".aosip.screenrecord.TakeScreenrecordService"
+        <service android:name=".kasumi.screenrecord.TakeScreenrecordService"
             android:process=":screenrecord"
             android:exported="false" />
 
@@ -273,7 +273,7 @@
                   android:theme="@style/TunerSettings"
                   android:label="@string/statusbar_icons_blacklist"
                   android:process=":tuner"
-                  android:parentActivityName="com.aosip.owlsnest.statusbar.IconsCategory"
+                  android:parentActivityName="com.kasumi.closet.statusbar.IconsCategory"
                   android:exported="true">
         </activity>
 
@@ -294,12 +294,12 @@
                   android:theme="@style/TunerSettings"
                   android:label="@string/tuner_notification_control"
                   android:process=":tuner"
-                  android:parentActivityName="com.aosip.owlsnest.notification.NotificationCategory"
+                  android:parentActivityName="com.kasumi.closet.notification.NotificationCategory"
                   android:exported="true">
         </activity>
 
         <activity
-            android:name=".aosip.LockscreenShortcutsActivity"
+            android:name=".kasumi.LockscreenShortcutsActivity"
             android:icon="@drawable/tuner"
             android:label="@string/lockscreen_targets_message"
             android:theme="@android:style/Theme.Material.Settings"
@@ -562,13 +562,13 @@
 
         <!-- App picker activity -->
         <activity
-            android:name=".aosip.apppicker.AppPickerActivity"
+            android:name=".kasumi.apppicker.AppPickerActivity"
             android:theme="@style/AppPicker"
             android:label="@string/quick_settings_app_picker"
             android:icon="@drawable/ic_qs_app_picker"
             android:enabled="true" >
             <intent-filter>
-                <action android:name=".aosip.apppicker.AppPickerActivity" />
+                <action android:name=".kasumi.apppicker.AppPickerActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

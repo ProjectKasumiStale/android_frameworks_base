@@ -3828,7 +3828,7 @@ public final class Settings {
           * AOSiP Settings activity custom summary text
           * @hide
           */
-        public static final String AOSIP_SETTINGS_SUMMARY= "aosip_settings_summary";
+        public static final String KASUMI_SETTINGS_SUMMARY= "kasumi_settings_summary";
 
         /**
          * Indicates whether ANBI (Accidental navigation button interaction) is enabled.

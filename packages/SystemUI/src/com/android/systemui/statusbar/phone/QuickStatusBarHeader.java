@@ -53,7 +53,7 @@ import android.widget.Toast;
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto;
 import com.android.keyguard.KeyguardStatusView;
-import com.android.systemui.aosip.StatusBarHeaderMachine;
+import com.android.systemui.kasumi.StatusBarHeaderMachine;
 import com.android.systemui.FontSizeUtils;
 import com.android.systemui.R;
 import com.android.systemui.qs.QSPanel;
@@ -451,7 +451,7 @@ public class QuickStatusBarHeader extends BaseStatusBarHeader implements
         } else if (v == mMultiUserSwitch) {
             startUserLongClickActivity();
         } else if (v == mSettingsButton) {
-            startAOSIPActivity();
+            startKASUMIActivity();
         }
         vibrateheader(20);
         return false;
@@ -472,11 +472,11 @@ public class QuickStatusBarHeader extends BaseStatusBarHeader implements
                 true /* dismissShade */);
     }
 
-    private void startAOSIPActivity() {
-        Intent aosipIntent = new Intent(Intent.ACTION_MAIN);
-        aosipIntent.setClassName("com.android.settings",
-            "com.android.settings.Settings$OwlsNestActivity");
-        mActivityStarter.startActivity(aosipIntent, true /* dismissShade */);
+    private void startKASUMIActivity() {
+        Intent kasumiIntent = new Intent(Intent.ACTION_MAIN);
+        kasumiIntent.setClassName("com.android.settings",
+            "com.android.settings.Settings$ClosetActivity");
+        mActivityStarter.startActivity(kasumiIntent, true /* dismissShade */);
     }
 
     private void startDateActivity() {

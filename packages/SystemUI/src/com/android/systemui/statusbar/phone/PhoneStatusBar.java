@@ -143,7 +143,7 @@ import com.android.keyguard.KeyguardStatusView;
 import com.android.keyguard.KeyguardUpdateMonitor;
 import com.android.keyguard.KeyguardUpdateMonitorCallback;
 import com.android.keyguard.ViewMediatorCallback;
-import com.android.systemui.aosip.StatusBarHeaderMachine;
+import com.android.systemui.kasumi.StatusBarHeaderMachine;
 import com.android.systemui.AutoReinflateContainer;
 import com.android.systemui.AutoReinflateContainer.InflateListener;
 import com.android.systemui.BatteryLevelTextView;
